@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #212832;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -17,4 +21,263 @@ select,
 button {
     font-size: inherit;
     font-family: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% -48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn {
+    --height: 58px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 149px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.section-heading {
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.25;
+    color: var(--primary-color);
+}
+
+.section-desc {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    color: var(--primary-color);
+}
+
+/* Header */
+.header {
+    padding: 54px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+    margin-left: -370px;
+}
+
+.navbar__link,
+.header-action__link {
+    padding: 8px 24px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #696d76;
+}
+
+.header-action__link {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.navbar__link:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.header-action__btn {
+    --height: 52px;
+    min-width: 113px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+}
+
+.hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__content {
+    /* margin-top: 57px; */
+}
+
+.hero__label {
+    line-height: 1.75;
+    color: #696d77;
+}
+
+.hero__heading {
+    margin-top: 12px;
+    width: 500px;
+    color: var(--primary-color);
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.17;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 540px;
+    color: #696d76;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 540px;
+    height: 74px;
+    margin: 40px 0 20px 0;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0px 16px 42px 0px rgba(0, 0, 0, 0.07);
+}
+
+.subscribe-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 23px 0 23px 23px;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+    font-size: 1.6rem;
+}
+
+.subscribe-form__input::placeholder {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #696d76;
+}
+
+.subscribe-form__submit {
+    display: flex;
+    flex-shrink: 0;
+    padding: 15px 30px;
+    margin: 8px;
+    outline: none;
+    border: none;
+    background: #7264d6;
+}
+
+.hero-note {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71;
+}
+
+.hero__media {
+    padding-bottom: 160px;
+}
+
+.hero__img-wrap {
+    position: relative;
+    width: 296px;
+    height: 562px;
+    background: orange;
+    border-radius: 40px;
+    border: 12px solid #212832;
+}
+
+.hero__card {
+    margin: 40px 11px 0 11px;
+    width: 250px;
+    min-height: 150px;
+    background: #7466d7;
+    background: linear-gradient(76deg, #7e70de 11.52%, #7264d6 70.78%);
+    border-radius: 20px;
+}
+
+.hero__card-content {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__card-type {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.hero__card-account {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 6px;
+}
+
+.hero__service {
+    margin: 24px 11px 35px 11px;
+}
+
+.hero__service-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__service-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #31456a;
+}
+
+.hero__service-link {
+    display: flex;
+    margin-left: -20px;
+    column-gap: 14px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero__service-info {
+    margin-left: -20px;
+}
+
+.hero__service-choice,
+.hero__service-money {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--primary-color);
+    white-space: nowrap;
+}
+
+.hero__service-desc,
+.hero__service-date {
+    margin-top: 6px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #696d76;
+    white-space: nowrap;
 }
