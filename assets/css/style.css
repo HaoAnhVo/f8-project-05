@@ -885,7 +885,6 @@ a:hover {
 .feedback__item-content {
     width: 570px;
     min-height: 314px;
-    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
 }
 
 .feedback__item-quote {
@@ -898,20 +897,27 @@ a:hover {
     font-weight: 400;
     line-height: 1.54;
     background: #fff;
-    padding-bottom: 32px;
+    padding: 42px 28px;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.feedback__item-quote:hover {
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.2));
 }
 
 .feedback__item-quote::after {
+    display: block;
     content: "";
     position: absolute;
     bottom: -93px;
     left: 210px;
     border: 47px solid;
     border-color: #fff transparent transparent;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.2));
 }
 
 .feedback__item-img-wrap {
-    margin-left: 200px;
+    margin: 26px 0 0 205px;
     position: relative;
     width: 104px;
     height: 104px;
@@ -944,7 +950,7 @@ a:hover {
 }
 
 .feedback__item-name {
-    margin: 20px 0 0 170px;
+    margin: 20px 0 0 175px;
     color: #070052;
     font-size: 2.6rem;
     font-weight: 600;
@@ -952,7 +958,7 @@ a:hover {
 }
 
 .feedback__item-job {
-    margin: 2px 0 0 200px;
+    margin: 2px 0 0 205px;
     color: #696d76;
     font-size: 1.8rem;
     font-weight: 400;
@@ -1114,9 +1120,13 @@ a:hover {
     line-height: 1.67;
 }
 
+.footer__list {
+    margin-top: 15px;
+}
+
 .footer__link {
     display: inline-block;
-    margin-top: 24px;
+    margin-top: 10px;
     color: #6a6e78;
     font-size: 1.8rem;
     font-weight: 400;
@@ -1195,4 +1205,36 @@ a:hover {
     outline: none;
     border: none;
     background: #7264d6;
+}
+
+.footer__contact {
+    /* margin-top: 54px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 110px;
+}
+
+.footer__mail,
+.footer__tel {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.footer__copy-right {
+    margin-top: 28px;
+    height: 84px;
+    flex-shrink: 0;
+    background: #7264d6;
+    padding: 28px 0 28px;
+}
+
+.footer__copy-right-content {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    text-align: center;
 }
